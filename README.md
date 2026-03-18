@@ -93,7 +93,7 @@ The application will open as a desktop app (Electron).
 - Sessions are stored locally on the device
 - First use requires QR Code login
 
-###⚠️ Important
+### ⚠️ Important
 
 - Do NOT share session files
 - Do NOT upload sensitive data to GitHub
