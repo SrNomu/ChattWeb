@@ -24,7 +24,7 @@ It allows users to:
 > Add a screenshot or GIF here
 
 Example:
-![preview](./preview.png)
+![preview](<img width="506" height="213" alt="image" src="https://github.com/user-attachments/assets/815536ef-3e6e-4736-8773-0be24c7c0ab3" />)
 
 ---
 
@@ -38,9 +38,26 @@ Example:
 
 ## 📦 Installation
 
-Make sure you have Node.js installed.
+Before running the project, you need to install Node.js.
+
+### 🧩 1. Install Node.js
+
+Download and install Node.js from the official website:
+
+https://nodejs.org/
+
+- Choose the **LTS version**
+- During installation, make sure to check:
+  ✔ "Add to PATH"
+
+After installation, restart your computer (recommended).
+
+---
+
+### 🧪 2. Verify installation
+
+Open the Command Prompt (CMD) and run:
 
 ```bash
-git clone https://github.com/SrNomu/ChattWeb.git
-cd ChattWeb
-npm install
+node -v
+npm -v
