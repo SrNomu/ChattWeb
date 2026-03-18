@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Atualizando ChattWeb</title>
+  <style>
+    body { font-family: sans-serif; display:flex; flex-direction:column; align-items:center; justify-content:center; height:100vh; }
+    #retry-btn { margin-top: 20px; padding: 6px 12px; font-size:14px; }
+  </style>
+</head>
+<body>
+  <h3 id="status">Buscando atualizações...</h3>
+  <button id="retry-btn" style="display:none;">Tentar novamente</button>
+
+  <script>
+    const { ipcRenderer } = require('electron');
+    const statusEl = document.getElementById('status');
+    const retryBtn = document.getElementById('retry-btn');
+
+    // Atualiza status
+    ipcRenderer.on('update-status', (event, msg) => {
+      statusEl.textContent = msg;
+    });
+
+    // Mostra botão de retry
+    ipcRenderer.on('show-retry-button', () => {
+      retryBtn.style.display = 'block';
+    });
+
+    // Ao clicar em retry
+    retryBtn.addEventListener('click', () => {
+      retryBtn.style.display = 'none';
+      statusEl.textContent = 'Buscando atualizações...';
+      ipcRenderer.send('retry-update');
+    });
+  </script>
+</body>
+</html>

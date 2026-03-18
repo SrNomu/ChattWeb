@@ -1,0 +1,27 @@
+{
+  "name": "chattweb",
+  "productName": "ChattWeb",
+  "version": "1.0.0",
+  "description": "App baseado no Chromium que une todos os chats web (WhatsApp, Telegram, Messenger, Line...)",
+  "main": "main/main.js",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-builder"
+  },
+  "author": "Pedro Henrique",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^38.2.1",
+    "electron-builder": "^24.13.3"
+  },
+  "build": {
+    "appId": "com.pedro.chattweb",
+    "win": {
+      "target": "nsis",
+      "icon": "assets/icons/ChattWeb.ico"
+    },
+    "directories": {
+      "output": "dist"
+    }
+  }
+}
