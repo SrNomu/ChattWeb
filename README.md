@@ -62,7 +62,48 @@ Open the Command Prompt (CMD) and run:
 ```bash
 node -v
 npm -v
+```
 
----
+### 📁 3. Clone the project
 
-###📁 3. Clone the project
+```bash
+git clone https://github.com/SrNomu/ChattWeb.git
+cd ChattWeb
+```
+
+###📥 4. Install dependencies
+
+```bash
+npm install
+```
+
+### ▶️ Running the App
+
+Start the application with:
+
+```bash
+npm start
+```
+
+The application will open as a desktop app (Electron).
+
+### 🔐 Sessions
+
+- Each account uses an isolated session
+- Sessions are stored locally on the device
+- First use requires QR Code login
+
+###⚠️ Important
+
+- Do NOT share session files
+- Do NOT upload sensitive data to GitHub
+- Always log out before sharing the project
+
+### 🚧 Status
+
+In development
+
+### 👨‍💻 Author
+
+Pedro Penrique
+GitHub: https://github.com/SrNomu
