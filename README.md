@@ -24,7 +24,8 @@ It allows users to:
 > Add a screenshot or GIF here
 
 Example:
-![preview](<img width="506" height="213" alt="image" src="https://github.com/user-attachments/assets/815536ef-3e6e-4736-8773-0be24c7c0ab3" />)
+<img width="324" height="346" alt="image" src="https://github.com/user-attachments/assets/8bb37f86-4efd-4b51-acb0-04fad7906ccb" />
+
 
 ---
 
