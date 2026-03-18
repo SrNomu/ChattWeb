@@ -62,3 +62,7 @@ Open the Command Prompt (CMD) and run:
 ```bash
 node -v
 npm -v
+
+---
+
+###📁 3. Clone the project
